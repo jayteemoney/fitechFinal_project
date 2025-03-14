@@ -10,7 +10,7 @@ function Home() {
   const [recipes, setRecipes] = useState([]);
 
   const apiKey = '80ecd3ce66f54ab48ed781403e0dcb31'; 
-  const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=pizza&number=5`;
+  const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=pizza&number=9`;
 
   // Fetch data when the component mounts
   useEffect(() => {
