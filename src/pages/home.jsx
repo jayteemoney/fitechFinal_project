@@ -28,7 +28,7 @@ function Home() {
 
    return (
     <div>
-    <div className='bg-black text-white '>
+    <div className='bg-black text-white p-[40px]'>
       <Landing/>  
       <div className='flex flex-wrap justify-center'>
           {recipes.length > 0 ? (

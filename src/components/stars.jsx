@@ -1,13 +1,21 @@
 
+import { Link } from 'react-router-dom';
 
-function Stars() {
+const Stars = () => {
   return (
-    <div className="justify-center flex gap-[10px] hover:bg-red-400">
-        <a href="#"><i className="fas fa-shopping-cart"></i></a>
-        <a href="#"><i className="fas fa-heart"></i></a>
-        <a href="#"><i className="fas fa-eye"></i></a>
+    <div className="justify-center flex gap-[10px] mb-10">
+      <Link to="/shopping-cart" aria-label="Shopping Cart">
+        <i className="fas fa-shopping-cart"></i>
+      </Link>
+      <Link to="/favorites" aria-label="Favorite">
+        <i className="fas fa-heart"></i>
+      </Link>
+      <Link to="/view-item" aria-label="View Item">
+        <i className="fas fa-eye"></i>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Stars
+export default Stars;
+
