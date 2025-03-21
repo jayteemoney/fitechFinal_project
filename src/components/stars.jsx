@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Stars = () => {
   return (
-    <div className="justify-center flex gap-[10px] mb-10">
+    <div className="justify-center flex gap-[10px] mb-2">
       <Link to="/shopping-cart" aria-label="Shopping Cart">
         <i className="fas fa-shopping-cart"></i>
       </Link>

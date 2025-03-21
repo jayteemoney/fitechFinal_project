@@ -36,7 +36,7 @@ function Home() {
           recipes.map((recipe) => (
             <div key={recipe.id} className="flex justify-center items-center flex-col">
               <Stars/>
-              <div className='flex w-[400px] flex-wrap justify-center items-center'>    
+              <div className='flex w-[400px] flex-wrap justify-center items-center mb-2'>    
                   <img src={recipe.image} alt={recipe.title} className='rounded-[15px]'/>
               </div>
               <h2>{recipe.title}</h2>
