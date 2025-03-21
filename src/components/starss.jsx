@@ -1,7 +1,7 @@
 
 function Starss() {
   return (
-    <div className="flex justify-center flex-col text-center hover:bg-red-400">
+    <div className="flex justify-center flex-col text-center mb-10">
         <div>
           <i className="fas fa-star"></i>
           <i className="fas fa-star"></i>

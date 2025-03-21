@@ -27,19 +27,19 @@ function Home() {
     }, [url]); // Empty dependency array ensures this runs only once on mount
 
    return (
-    <div>
+    <div className='justify-center items-center'>
     <div className='bg-black text-white p-[40px] flex flex-col  justify-center items-center'>
       <Landing/>  
       <div className='flex flex-wrap justify-center'>
           {recipes.length > 0 ? (
           // Use map() to render the list of recipes dynamically
           recipes.map((recipe) => (
-            <div key={recipe.id} className="">
-              <h2>{recipe.title}</h2>
+            <div key={recipe.id} className="flex justify-center items-center flex-col">
               <Stars/>
-              <div className='flex w-[400px] flex-wrap'>    
-                  <img src={recipe.image} alt={recipe.title} className='rounded-[15px] transition-transform duration-300 transform hover:scale-105'/>
+              <div className='flex w-[400px] flex-wrap justify-center items-center'>    
+                  <img src={recipe.image} alt={recipe.title} className='rounded-[15px]'/>
               </div>
+              <h2>{recipe.title}</h2>
               <Starss/>
             </div>
           ))
